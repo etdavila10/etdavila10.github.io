@@ -1,0 +1,26 @@
+---
+import "@styles/global.css";
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content={"Eduardo has recently finished their fifth year as a math Ph.D. " +
+        "candidate at the University of Minnesota — Twin Cities. Eduardo studies " +
+        "commutative algebra and algebraic geometry."}
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <script is:inline src="https://kit.fontawesome.com/9730b2ac3e.js" crossorigin="anonymous"></script>
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

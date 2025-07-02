@@ -1,123 +1,18 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Welcome from "../components/Welcome.astro";
-import Footer from "../components/Footer.astro";
-import Mathematics from "../components/Mathematics.astro";
-import Software from "../components/Software.astro";
-import About from "../components/About.astro";
-import HamburgerMenu from "../components/HamburgerMenu.astro";
+import DefaultLayout from "@layouts/DefaultLayout.astro"
 ---
 
-<Layout title="Eduardo Torres Dávila: Math Ph.D. Candidate/Software Engineer">
-  <button
-    id="to-top-button"
-    class="hover:scale-110 transition-all duration-300 w-10 h-10 bg-white rounded-full fixed -right-12 bottom-6"
-    onclick="scrollToTop()"
-  >
-    <i class="fa-regular fa-circle-up fa-2xl"></i>
-  </button>
-  <main id="content">
-    <HamburgerMenu />
-    <Welcome />
-    <About />
-    <Mathematics />
-    <Software />
-    <div id="teaching-container" class="font-display p-6 sm:p-12 lg:px-24">
-      <h1
-        id="teaching-heading"
-        class="text-4xl sm:text-5xl md:text-6xl font-bold mb-8"
-      >
-        Teaching
-      </h1>
-<!--     <h2 -->
-   <!--     id="current-course-heading" -->
-      <!--  class="text-xl sm:text-2xl lg:text-3xl font-bold mb-6 font-display border-b-2 border-grey-800 w-fit" -->
-      <!-- > -->
-        <!-- Current Course -->
-      <!-- </h2> -->
-      <!-- <div id="current-course-container" class="lg:text-xl"> -->
-<!--        <ul class="list-disc list-inside mb-12"> -->
-          <!-- <li> -->
-            <!-- Math 1151: Precalculus II - Graduate Teaching Assistant <span -->
-              <!-- class="italic text-grey-400 mb-1">(Spring 2025)</span -->
-            <!-- > -->
-          <!-- </li> -->
-        <!-- </ul> -->
-      <!-- </div> -->
-<!--      <h2 -->
-        <!-- id="prev-courses-heading" -->
-        <!-- class="text-xl sm:text-2xl lg:text-3xl font-bold mb-6 font-display border-b-2 border-grey-800 w-fit" -->
-      <!-- > -->
-   <!--     Previous Courses -->
-<!--      </h2> -->
-      <div id="prev-courses-container" class="lg:text-xl">
-        <ul class="list-disc list-inside mb-12">
-          <li class="mb-6">
-            Math 1151: Precalculus II - Graduate Teaching Assistant <span
-              class="italic text-grey-400 mb-1">(Spring 2025)</span
-            >
-          </li>
-          <li class="mb-6">
-            Math 1272: Calculus II - Graduate Teaching Assistant <span
-              class="italic text-grey-400 mb-1">(Fall 2024)</span
-            >
-          </li>
-          <li class="mb-6">
-            Math 1151: Precalculus II - Graduate Teaching Assistant <span
-              class="italic text-grey-400 mb-1">(Spring 2024)</span
-            >
-          </li>
-          <li class="mb-6">
-            Math 1151: Precalculus II - Graduate Teaching Assistant <span
-              class="italic text-grey-400">(Fall 2023)</span
-            >
-          </li>
-          <li>
-            Math 1271: Calculus I - Graduate Teaching Assistant <span
-              class="italic text-grey-400">(Spring 2022)</span
-            >
-          </li>
-        </ul>
-      </div>
-      <h1
-        id="mentoring-heading"
-        class="text-4xl sm:text-5xl md:text-6xl font-bold mb-8"
-      >
-        Mentoring
-      </h1>
-      <div id="mentoring-container" class="lg:text-xl">
-        <ul class="list-disc list-inside mb-12">
-          <li>
-            UMN Combinatorics and Algebra REU - Graduate Teaching Assistant <span
-              class="italic text-grey-400 mb-1">(Summer 2024)</span
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- TODO: Add a community section to the page -->
-    <!-- <div id="community-container"> -->
-    <!--   <h1 id="community-heading" class="text-8xl p-24 font-display font-bold"> -->
-    <!--     Community -->
-    <!--   </h1> -->
-    <!-- </div> -->
-  </main>
-  <Footer class="bg-grey-800 text-white" />
-</Layout>
-
-<script is:inline>
-  const toTopButtonDiv = document.getElementById("to-top-button");
-
-  window.addEventListener("scroll", function () {
-    // TODO: Find a good breakpoint for this
-    if (window.scrollY > 1000) {
-      toTopButtonDiv.style.right = "1.5rem";
-    } else {
-      toTopButtonDiv.style.right = "-3rem";
-    }
-  });
-
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
-</script>
+<DefaultLayout title="Eduardo Torres Dávila">
+  <div class="h-screen flex items-center">
+    <ul class="m-auto text-center grid grid-cols-1 grid-rows-4 gap-6">
+      <li class="border-1 rounded-xl w-32 h-32 flex items-center justify-center"><a>About Me</a></li>
+      <li class="border-1 rounded-xl w-32 h-32 flex items-center justify-center"><a>Mathematics</a></li>
+      <li class="border-1 rounded-xl w-32 h-32 flex items-center justify-center"><a>Software</a></li>
+      <li class="border-1 rounded-xl w-32 h-32 flex items-center justify-center"><a>Data Science</a></li>
+    </ul>
+  </div>
+  <div class="absolute bottom-0 flex items-center">
+    <h1 class="py-3 px-6 border rounded-full">Eduardo Torres Dávila</h1>
+    <a><i class="fa-brands fa-github"></i></a>
+  </div>
+</DefaultLayout>
