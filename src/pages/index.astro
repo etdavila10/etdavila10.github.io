@@ -3,16 +3,24 @@ import DefaultLayout from "@layouts/DefaultLayout.astro"
 ---
 
 <DefaultLayout title="Eduardo Torres Dávila">
-  <div class="h-screen flex items-center">
-    <ul class="m-auto text-center grid grid-cols-1 grid-rows-4 gap-6">
-      <li class="border-1 rounded-xl w-32 h-32 flex items-center justify-center"><a>About Me</a></li>
-      <li class="border-1 rounded-xl w-32 h-32 flex items-center justify-center"><a>Mathematics</a></li>
-      <li class="border-1 rounded-xl w-32 h-32 flex items-center justify-center"><a>Software</a></li>
-      <li class="border-1 rounded-xl w-32 h-32 flex items-center justify-center"><a>Data Science</a></li>
+  <div class="flex flex-col h-screen justify-center p-6">
+    <h1 class="text-center text-2xl">Eduardo Torres Dávila</h1>
+    <h2 class="text-center text-gray-700 text-sm">Math Ph.D. Candidate & Software Engineer</h2>
+    <div class="text-center">
+      <i class="fa-brands fa-github mr-2"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+    <hr class="my-6 text-gray-300">
+    <ul class="text-xl">
+      <li class="mb-3 underline decoration-2 decoration-red-400">
+        <a href="mathematics">Mathematics<i class="ml-2 fa-solid fa-arrow-right text-red-400"></i></a>
+      </li>
+      <li class="mb-3 underline decoration-2 decoration-green-400">
+        <a href="software">Software<i class="ml-2 fa-solid fa-arrow-right text-green-400"></i></a>
+      </li>
+      <li class="underline decoration-2 decoration-blue-400">
+        <a href="data-science">Data Science<i class="ml-2 fa-solid fa-arrow-right text-blue-400"></i></a>
+      </li>
     </ul>
-  </div>
-  <div class="absolute bottom-0 flex items-center">
-    <h1 class="py-3 px-6 border rounded-full">Eduardo Torres Dávila</h1>
-    <a><i class="fa-brands fa-github"></i></a>
   </div>
 </DefaultLayout>
