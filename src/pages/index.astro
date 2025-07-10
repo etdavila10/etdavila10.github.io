@@ -3,24 +3,30 @@ import DefaultLayout from "@layouts/DefaultLayout.astro"
 ---
 
 <DefaultLayout title="Eduardo Torres Dávila">
-  <div class="flex flex-col h-screen justify-center p-6">
-    <h1 class="text-center text-2xl">Eduardo Torres Dávila</h1>
-    <h2 class="text-center text-gray-700 text-sm">Math Ph.D. Candidate & Software Engineer</h2>
-    <div class="text-center">
-      <i class="fa-brands fa-github mr-2"></i>
-      <i class="fa-brands fa-linkedin-in"></i>
+  <div class="flex flex-col h-screen justify-end gap-6">
+    <div class="pl-6">
+      <h1 class="text-3xl mb-3">Eduardo Torres Dávila</h1>
+      <div>
+        <i class="fa-brands fa-github mr-2 text-2xl"></i>
+        <i class="fa-brands fa-linkedin-in text-2xl"></i>
+      </div>
     </div>
-    <hr class="my-6 text-gray-300">
-    <ul class="text-xl">
-      <li class="mb-3 underline decoration-2 decoration-red-400">
-        <a href="mathematics">Mathematics<i class="ml-2 fa-solid fa-arrow-right text-red-400"></i></a>
-      </li>
-      <li class="mb-3 underline decoration-2 decoration-green-400">
-        <a href="software">Software<i class="ml-2 fa-solid fa-arrow-right text-green-400"></i></a>
-      </li>
-      <li class="underline decoration-2 decoration-blue-400">
-        <a href="data-science">Data Science<i class="ml-2 fa-solid fa-arrow-right text-blue-400"></i></a>
-      </li>
-    </ul>
+    <div>
+      <a href="mathematics">
+        <div class="h-48 flex flex-col justify-center bg-red-400">
+          <h3 class="pl-6 text-2xl">Math</h3>
+        </div>
+      </a>
+      <a href="software">
+        <div class="h-48 flex flex-col justify-center text-right bg-green-400">
+          <h3 class="pr-6 text-2xl">Software</h3>
+        </div>
+      </a>
+      <a href="data-science">
+        <div class="h-48 flex flex-col justify-center bg-blue-400">
+          <h3 class="pl-6 text-2xl">Data</h3>
+        </div>
+      </a>
+    </div>
   </div>
 </DefaultLayout>
