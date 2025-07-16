@@ -13,7 +13,11 @@
     "@astrojs/check": "^0.9.4",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.10.2",
+    "d3": "^7.9.0",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3"
   }
 }
