@@ -4,88 +4,37 @@ import DefaultLayout from "@layouts/DefaultLayout.astro"
 
 <DefaultLayout title="Eduardo Torres Dávila">
   <div class="flex h-screen items-center justify-center">
-    <div class="flex gap-6">
-      <div class="w-56 h-68 rounded-xl overflow-hidden flex-none">
-        <img src="4-FINAL.jpg" alt="picture of Eduardo"/>
+    <div class="flex gap-12">
+      <div class="w-68 h-86 rounded-xl overflow-hidden flex-none">
+        <img src="/4-FINAL.jpg" alt="picture of Eduardo"/>
       </div>
-      <div class="flex flex-col h-68 justify-between">
-        <div>
-          <h1 style="font-variant:small-caps;" class="text-4xl mb-6">Eduardo Torres Dávila</h1>
-          <div>
-            <p class="text-2xl">
-              I am a <a href="#" class="underline decoration-2 text-red">mathematician</a>,
-            <!-- </p> -->
-            <!-- <p class="text-2xl"> -->
-              a <a class="underline decoration-2 text-green">full-stack software engineer</a>,
-            <!-- </p> -->
-            <!-- <p class="text-2xl"> -->
-              and an aspiring <a class="underline decoration-2 text-blue">data scientist</a>.
-            </p>
-          </div>
+      <div class="flex flex-col h-86 justify-between">
+        <div class="text-2xl">
+          <h1 class="font-display font-semibold text-4xl mb-6">Eduardo Torres Dávila</h1>
+          <p>
+            I am a
+            <a href="mathematics" class="underline decoration-2 text-red">
+              mathematician<!--
+            --></a>,
+            a
+            <a href="software" class="underline decoration-2 text-green">
+              full-stack software engineer<!--
+            --></a>,
+            and an aspiring
+            <a href="data-science" class="underline decoration-2 text-blue">
+              data scientist<!--
+            --></a>.
+          </p>
         </div>
-        <div>
-          <div class="text-3xl">
-            <i class="fa-brands fa-github mr-3"></i>
-            <i class="fa-brands fa-linkedin-in mr-3"></i>
-            <p class="text-lg">
-              Emails welcome to
-              <a class="underline decoration-2 text-blue" href="mailto:etdavila10@gmail.com">etdavila10@gmail.com</a>.
-            </p>
-          </div>
+        <div class="text-3xl">
+          <a href="https://github.com/etdavila10" class="hover:text-blue"><i class="fa-brands fa-github mr-3"></i></a>
+          <a href="https://www.linkedin.com/in/etorres10/" class="hover:text-blue"><i class="fa-brands fa-linkedin-in mr-3"></i></a>
+          <p class="text-lg">
+            Emails welcome to
+            <a class="underline decoration-2 text-blue" href="mailto:etdavila10@gmail.com">etdavila10@gmail.com</a>.
+          </p>
         </div>
       </div>
     </div>
   </div>
-  <!-- <div> -->
-  <!--   <h1>PhD in Mathematics</h1> -->
-  <!--   <p> -->
-  <!--     Most of my formal education has been dedicated to understanding the structure -->
-  <!--     of ideals of affine semigroup rings using the polyhedral geometry of the -->
-  <!--     underlying cone. This is mathematical jargon to say I look for patterns -->
-  <!--     inside of cones that help explain deep algebraic structures. My dissertation -->
-  <!--     is "Differential Primary Decomposition for Graded Rings" which I defended -->
-  <!--     on August 5, 2025. -->
-  <!--   </p> -->
-  <!--   <p>Listed are the latest three articles I have co-authored.</p> -->
-  <!--   <ul> -->
-  <!--     <li>Infinite free resolutions over numerical semigroup algebras via specialization</li> -->
-  <!--     <li>The multigraded BGG correspondence in Macaulay2</li> -->
-  <!--     <li>Numerical semigroups, polyhedra, and posets III: minimal presentations and face dimension</li> -->
-  <!--   </ul> -->
-  <!--   <a href='publications'>List of all publications</a> -->
-  <!-- </div> -->
-  <!-- <div> -->
-  <!--   <h1>Pythonista</h1> -->
-  <!--   <p> -->
-  <!--     I wrote my first line of code during my introduction to computer science -->
-  <!--     course during my first year at San Diego State University. I have written -->
-  <!--     countless lines of Python code for things from classroom to academic projects. -->
-  <!--   </p> -->
-  <!--   <h1>Web Developer</h1> -->
-  <!--   <p> -->
-  <!--     In Summer 2023, I had my first break interning at Amazon as a software -->
-  <!--     developer engineer. At Amazon, my team's tech stack was React, Spring, -->
-  <!--     and SQL. I processed millions of rows of data using SQL, created the -->
-  <!--     backend logic with Spring (Java), and developed a customer-facing UI in -->
-  <!--     React (TypeScript). -->
-  <!--   </p> -->
-  <!-- </div> -->
-  <!-- <div> -->
-  <!--   <h1>Understanding Data</h1> -->
-  <!--   <p> -->
-  <!--     I  -->
-  <!--   </p> -->
-  <!-- </div> -->
-  <!-- <div> -->
-  <!--   <h1>Teaching section</h1> -->
-  <!--   <p> -->
-  <!--     Below is a list of courses I have previously TA'd at the Unviersity of -->
-  <!--     Minnesota - Twin Cities. -->
-  <!--   </p> -->
-  <!--   <ul> -->
-  <!--     <li>Math 1151: Precalculus (Fall 2023, Spring 2024, Spring 2025)</li> -->
-  <!--     <li>Math 1271: Calculus I (Spring 2022)</li> -->
-  <!--     <li>Math 1272: Calculus II (Fall 2024)</li> -->
-  <!--   </ul> -->
-  <!-- </div> -->
 </DefaultLayout>

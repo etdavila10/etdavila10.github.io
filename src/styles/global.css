@@ -15,4 +15,6 @@
   --color-blue: #386fa4;
   --color-green: #00916E;
   --color-red: #e3655b;
+  --font-body: "Switzer-Variable", var(--font-sans);
+  --font-display: "Satoshi-Variable", var(--font-sans);
 }
