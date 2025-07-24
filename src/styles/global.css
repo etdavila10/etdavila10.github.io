@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
-/* * {
-  outline: 1px solid red;
-} */
+/* * { */
+/*   outline: 1px solid red; */
+/* } */
 /* @theme { */
 /*   --spacing =  */
-/* } */
+
+@theme {
+  --color-*: initial;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-linen: #f6f5ed;
+  --color-raisin: #231f20;
+  --color-blue: #386fa4;
+  --color-green: #00916E;
+  --color-red: #e3655b;
+}
