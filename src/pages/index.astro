@@ -3,26 +3,35 @@ import DefaultLayout from "@layouts/DefaultLayout.astro"
 ---
 
 <DefaultLayout title="Eduardo Torres Dávila">
-  <div class="flex h-screen items-center">
+  <div class="flex h-screen items-center justify-center">
     <div class="flex gap-6">
-      <div class="w-56 flex-none">
+      <div class="w-56 h-68 rounded-xl overflow-hidden flex-none">
         <img src="4-FINAL.jpg" alt="picture of Eduardo"/>
       </div>
-      <div class="flex flex-col gap-12">
-        <h1 class="text-4xl uppercase">Eduardo Torres Dávila</h1>
-        <p class="text-xl">
-          I am a <a href="#" class="underline decoration-2 text-green">mathematician</a>,
-          a <a class="underline decoration-2 text-blue">full-stack software engineer</a>,
-          and an aspiring <a class="underline decoration-2 text-red">data scientist</a>.
-        </p>
+      <div class="flex flex-col h-68 justify-between">
         <div>
-          <p class="text-lg">
-            contact: etdavila10 [at] gmail [dot] com
-          </p>
-          <p class="text-lg">
-            <i class="fa-brands fa-github mr-3 text-2xl"></i>
-            <i class="fa-brands fa-linkedin-in mr-3 text-2xl"></i>
-          </p>
+          <h1 style="font-variant:small-caps;" class="text-4xl mb-6">Eduardo Torres Dávila</h1>
+          <div>
+            <p class="text-2xl">
+              I am a <a href="#" class="underline decoration-2 text-red">mathematician</a>,
+            <!-- </p> -->
+            <!-- <p class="text-2xl"> -->
+              a <a class="underline decoration-2 text-green">full-stack software engineer</a>,
+            <!-- </p> -->
+            <!-- <p class="text-2xl"> -->
+              and an aspiring <a class="underline decoration-2 text-blue">data scientist</a>.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="text-3xl">
+            <i class="fa-brands fa-github mr-3"></i>
+            <i class="fa-brands fa-linkedin-in mr-3"></i>
+            <p class="text-lg">
+              Emails welcome to
+              <a class="underline decoration-2 text-blue" href="mailto:etdavila10@gmail.com">etdavila10@gmail.com</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
