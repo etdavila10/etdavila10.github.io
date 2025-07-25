@@ -1,7 +1,109 @@
 ---
 import DefaultLayout from "@layouts/DefaultLayout.astro"
+import Footer from "@components/Footer.astro"
 ---
 
 <DefaultLayout title="Eduardo Torres Dávila: Mathematics">
-  <p>This is the mathematics page.</p>
+    <h1 class="text-red text-4xl font-display mt-24 mb-12">Mathematics</h1>
+    <p class="mb-3 indent-4">
+      I received my Ph.D. from the University of Minnesota &mdash; Twin Cities
+      on August 2025. My dissertation was titled "Differential Primary
+      Decomposition for Graded Rings". My advisor was
+      <a class="underline decoration-2 text-red" href="https://www-users.cse.umn.edu/~cberkesc/">
+        Dr. Christine Berkesch<!--
+      --></a>. My main area of focus is in commutative algebra and algebraic geometry.
+      My research interests include toric varieties, modules of differential
+      operators, numerical semigroups, and free resolutions.
+    </p>
+    <p class="mb-3 indent-4">
+      As a graduate teaching assistant, I taught Precalculus and both Calculus I
+      and II. I mentored Joseph DeLuca through a Directed Reading Program at the
+      University of Minnesota. I also mentored early-career mathematicians Sogol
+      Cyrusian, Nzingha Joseph, Zach Medlin, Saskia Solotko, and Philip Yang
+      during the 2024
+      <a class="underline decoration-2 text-red" href="https://www-users.cse.umn.edu/~reiner/REU/REU.html">
+        UMN Combinatorics & Algebra REU<!--
+      --></a>.
+    </p>
+    <p class="mb-12 indent-4">
+      Below you will find my three most recent publications. You can find a full
+      list of publications
+      <a class="underline decoration-2 text-red" href="publications">here</a>.
+    </p>
+    <hr class="w-64 m-auto mb-12">
+    <div class="mb-12">
+      <a href="https://arxiv.org/abs/2405.01700">
+        <h1 class="underline decoration-2 text-2xl font-display text-red">
+          Infinite free resolutions over numerical semigroup algebras via specialization
+        </h1>
+      </a>
+      <h2 class="text-lg">
+        with Tara Gomes, Christopher O'Neill, and Ola Sobieska
+      </h2>
+      <blockquote class="text-base pl-4 mt-4 border-s-4 border-red">
+        <p>
+          Each numerical semigroup $S$ with smallest positive element $m$
+          corresponds to an integer point in a polyhedral cone $C_m$, known as the Kunz
+          cone. The faces of $C_m$ form a stratification of numerical semigroups that
+          has been shown to respect a number of algebraic properties of $S$, including
+          the combinatorial structure of the minimal free resolution of the defining
+          toric ideal $I_S$. In this work, we prove that the structure of the infinite
+          free resolution of the ground field $\Bbbk$ over the semigroup algebra
+          $\mathbb k[S]$ also respects this stratification, yielding a new
+          combinatorial approach to classifying homological properties like Golodness
+          and rationality of the poincare series in this setting. Additionally, we give
+          a complete classification of such resolutions in the special case $m = 4$,
+          and demonstrate that the associated graded algebras do not generally respect
+          the same stratification.
+        </p>
+      </blockquote>
+    </div>
+    <div class="mb-12">
+      <a href="https://msp.org/jsag/2025/15-1/p05.xhtml">
+        <h1 class="underline decoration-2 text-2xl font-display text-red">
+          The multigraded BGG correspondence in Macaulay2
+        </h1>
+      </a>
+      <h2 class="text-lg">
+        with Maya Banks, Michael K. Brown, Tara Gomes, Prashanth Sridhar, and Alexandre Zotine
+      </h2>
+      <blockquote class="text-base pl-4 mt-4 border-s-4 border-red">
+        <p>
+          We give an overview of a Macaulay2 package for computing with the
+          multigraded BGG correspondence. This software builds on the package BGG due
+          to Abo-Decker-Eisenbud-Schreyer-Smith-Stillman, which concerns the standard
+          graded BGG correspondence. In addition to implementing the multigraded BGG
+          functors, this package includes an implementation of differential modules and
+          their minimal free resolutions, and it contains a method for computing
+          strongly linear strands of multigraded free resolutions.
+        </p>
+      </blockquote>
+    </div>
+    <div class="mb-12">
+      <a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v30i2p57">
+        <h1 class="underline decoration-2 text-2xl font-display text-red">
+          Numerical semigroups, polyhedra, and posets III: minimal presentations and face dimension
+        </h1>
+      </a>
+      <h2 class="text-lg">
+        with Tara Gomes and Christopher O'Neill
+      </h2>
+      <blockquote class="text-base pl-4 mt-4 border-s-4 border-red">
+        <p>
+          This paper is the third in a series of manuscripts that examine the
+          combinatorics of the Kunz polyhedron $P_m$, whose positive integer points are
+          in bijection with numerical semigroups (cofinite subsemigroups of
+          $\mathbb Z \geq 0$) whose smallest positive element is $m$. The faces of
+          $P_m$ are indexed by a family of finite posets (called Kunz posets) obtained
+          from the divisibility posets of the numerical semigroups lying on a given
+          face. In this paper, we characterize to what extent the minimal presentation
+          of a numerical semigroup can be recovered from its Kunz poset. In doing so,
+          we prove that all numerical semigroups lying on the interior of a given face
+          of $P_m$ have identical minimal presentation cardinality, and we provide a
+          combinatorial method of obtaining the dimension of a face from its
+          corresponding Kunz poset.
+        </p>
+      </blockquote>
+    </div>
+    <Footer />
 </DefaultLayout>
