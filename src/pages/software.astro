@@ -4,14 +4,24 @@ import Footer from "@components/Footer.astro"
 ---
 
 <DefaultLayout title="Eduardo Torres Dávila: Software">
-  <div class="flex justify-between">
-    <a href="mathematics">
-      <h1 class="text-red text-4xl font-display mt-24 mb-12 opacity-30 hover:opacity-100">Mathematics</h1>
-    </a>
-    <h1 class="text-green text-4xl font-display mt-24 mb-12">Software</h1>
-    <a href="data-science">
-    <h1 class="text-blue text-4xl font-display mt-24 mb-12 opacity-30 hover:opacity-100">Data Science</h1>
-    </a>
+  <div class="mt-24 mb-12">
+    <div class="flex items-center justify-between">
+      <h1 class="text-green text-4xl font-display">Software</h1>
+      <div class="gap-6 flex">
+        <a href="/">
+          <i class="fa-solid fa-house hover:opacity-70"></i>
+        </a>
+        <a href="mathematics">
+          <i class="fa-solid fa-plus hover:text-red"></i>
+        </a>
+        <a>
+          <i class="fa-solid fa-code text-green"></i>
+        </a>
+        <a href="data-science">
+          <i class="fa-solid fa-database hover:text-blue"></i>
+        </a>
+      </div>
+    </div>
   </div>
   <p class="mb-3 indent-4">
     I am a software engineer.

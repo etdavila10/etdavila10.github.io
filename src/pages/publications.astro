@@ -1,8 +1,160 @@
-
 ---
 import DefaultLayout from "@layouts/DefaultLayout.astro"
+import Footer from "@components/Footer.astro"
 ---
 
 <DefaultLayout title="Eduardo Torres Dávila: Publications">
-  <p>This is the publications page.</p>
+  <div class="mt-24 mb-12">
+    <div class="flex items-center justify-between">
+      <h1 class="text-red text-4xl font-display">Publications</h1>
+      <div class="gap-6 flex">
+        <a href="/">
+          <i class="fa-solid fa-house hover:opacity-70"></i>
+        </a>
+        <a href="mathematics">
+          <i class="fa-solid fa-plus hover:text-red"></i>
+        </a>
+        <a href="software">
+          <i class="fa-solid fa-code hover:text-green"></i>
+        </a>
+        <a href="data-science">
+          <i class="fa-solid fa-database hover:text-blue"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="mb-12">
+    <a href="https://arxiv.org/abs/2405.01700">
+      <h1 class="underline decoration-2 text-2xl font-display text-red">
+        Infinite free resolutions over numerical semigroup algebras via specialization
+      </h1>
+    </a>
+    <h2 class="text-lg">
+      with Tara Gomes, Christopher O'Neill, and Ola Sobieska
+    </h2>
+    <blockquote class="text-base pl-4 mt-4 border-s-4 border-red">
+      <p>
+        Each numerical semigroup $S$ with smallest positive element $m$
+        corresponds to an integer point in a polyhedral cone $C_m$, known as the Kunz
+        cone. The faces of $C_m$ form a stratification of numerical semigroups that
+        has been shown to respect a number of algebraic properties of $S$, including
+        the combinatorial structure of the minimal free resolution of the defining
+        toric ideal $I_S$. In this work, we prove that the structure of the infinite
+        free resolution of the ground field $\Bbbk$ over the semigroup algebra
+        $\mathbb k[S]$ also respects this stratification, yielding a new
+        combinatorial approach to classifying homological properties like Golodness
+        and rationality of the poincare series in this setting. Additionally, we give
+        a complete classification of such resolutions in the special case $m = 4$,
+        and demonstrate that the associated graded algebras do not generally respect
+        the same stratification.
+      </p>
+    </blockquote>
+  </div>
+  <div class="mb-12">
+    <a href="https://msp.org/jsag/2025/15-1/p05.xhtml">
+      <h1 class="underline decoration-2 text-2xl font-display text-red">
+        The multigraded BGG correspondence in Macaulay2
+      </h1>
+    </a>
+    <h2 class="text-lg">
+      with Maya Banks, Michael K. Brown, Tara Gomes, Prashanth Sridhar, and Alexandre Zotine
+    </h2>
+    <blockquote class="text-base pl-4 mt-4 border-s-4 border-red">
+      <p>
+        We give an overview of a Macaulay2 package for computing with the
+        multigraded BGG correspondence. This software builds on the package BGG due
+        to Abo-Decker-Eisenbud-Schreyer-Smith-Stillman, which concerns the standard
+        graded BGG correspondence. In addition to implementing the multigraded BGG
+        functors, this package includes an implementation of differential modules and
+        their minimal free resolutions, and it contains a method for computing
+        strongly linear strands of multigraded free resolutions.
+      </p>
+    </blockquote>
+  </div>
+  <div class="mb-12">
+    <a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v30i2p57">
+      <h1 class="underline decoration-2 text-2xl font-display text-red">
+        Numerical semigroups, polyhedra, and posets III: minimal presentations and face dimension
+      </h1>
+    </a>
+    <h2 class="text-lg">
+      with Tara Gomes and Christopher O'Neill
+    </h2>
+    <blockquote class="text-base pl-4 mt-4 border-s-4 border-red">
+      <p>
+        This paper is the third in a series of manuscripts that examine the
+        combinatorics of the Kunz polyhedron $P_m$, whose positive integer points are
+        in bijection with numerical semigroups (cofinite subsemigroups of
+        $\mathbb Z \geq 0$) whose smallest positive element is $m$. The faces of
+        $P_m$ are indexed by a family of finite posets (called Kunz posets) obtained
+        from the divisibility posets of the numerical semigroups lying on a given
+        face. In this paper, we characterize to what extent the minimal presentation
+        of a numerical semigroup can be recovered from its Kunz poset. In doing so,
+        we prove that all numerical semigroups lying on the interior of a given face
+        of $P_m$ have identical minimal presentation cardinality, and we provide a
+        combinatorial method of obtaining the dimension of a face from its
+        corresponding Kunz poset.
+      </p>
+    </blockquote>
+  </div>
+  <div class="mb-12">
+    <a href="https://www.degruyterbrill.com/document/doi/10.1515/advgeom-2021-0024/html">
+      <h1 class="underline decoration-2 text-2xl font-display text-red">
+        Numerical semigroups, polyhedra, and posets II: Locating certain
+        families of semigroups
+      </h1>
+    </a>
+    <h2 class="text-lg">
+      with Jackson Autry, Abigail Ezell, Tara Gomes, Christopher O'Neill,
+      Christopher Preuss, and Tarang Saluja
+    </h2>
+    <blockquote class="text-base pl-4 mt-4 border-s-4 border-red">
+      <p>
+        Several recent papers have examined a rational polyhedron $P_m$ whose
+        integer points are in bijection with the numerical semigroups
+        (cofinite, additively closed subsets of the non-negative integers)
+        containing $m$. A combinatorial description of the faces of $P_m$ was
+        recently introduced, one that can be obtained from the divisibility
+        posets of the numerical semigroups a given face contains. In this
+        paper, we study the faces of $P_m$ containing arithmetical numerical
+        semigroups and those containing certain glued numerical semigroups, as
+        an initial step towards better understanding the full face structure of
+        $P_m$. In most cases, such faces only contain semigroups from these
+        families, yielding a tight connection to the geometry of $P_m$.
+      </p>
+    </blockquote>
+  </div>
+  <div class="mb-12">
+    <a href="https://msp.org/involve/2024/17-2/p01.xhtml">
+      <h1 class="underline decoration-2 text-2xl font-display text-red">
+        Visualizing the Support of Kostant's Weight Multiplicity Formula for
+        the Rank Two Lie Algebras
+      </h1>
+    </a>
+    <h2 class="text-lg">
+      with Pamela E. Harris, Marissa Loving, Juan Ramirez, Joseph Rennie,
+      Gordon Rojas Kirby, and Fabrice O. Ulysse
+    </h2>
+    <blockquote class="text-base pl-4 mt-4 border-s-4 border-red">
+      <p>
+        The multiplicity of a weight in a finite-dimensional irreducible
+        representation of a simple Lie algebra $\mathfrak g$ can be computed
+        via Kostant's weight multiplicity formula. This formula consists of an
+        alternating sum over the Weyl group (a finite group) and involves a
+        partition function known as Kostant's partition function. Motivated by
+        the observation that, in practice, most terms in the sum are zero, our
+        main results describe the elements of the Weyl alternation sets. The
+        Weyl alternation sets are subsets of the Weyl group which contributes
+        nontrivially to the multiplicity of a weight in a highest weight
+        representation of the Lie algebras $\mathfrak{'{'}so{'}'}_4(\mathbb C),
+        \mathfrak{'{'}so{'}'}_5(\mathbb C), \mathfrak{'{'}sp{'}'}_4(\mathbb
+        C)$, and the exceptional Lie algebra $\mathfrak g_2$. By taking a
+        geometric approach, we extend the work of Harris, Lescinsky, and Mabie
+        on $\mathfrak {'{'}sl{'}'}_3(\mathbb C)$, to provide visualizations of
+        these Weyl alternation sets for all pairs of integral weights $\lambda$
+        and $\mu$ of the Lie algebras considered.
+      </p>
+    </blockquote>
+  </div>
+  <Footer />
 </DefaultLayout>
