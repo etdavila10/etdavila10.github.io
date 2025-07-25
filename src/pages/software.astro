@@ -1,7 +1,20 @@
 ---
 import DefaultLayout from "@layouts/DefaultLayout.astro"
+import Footer from "@components/Footer.astro"
 ---
 
 <DefaultLayout title="Eduardo Torres Dávila: Software">
-  <p>This is the software page.</p>
+  <div class="flex justify-between">
+    <a href="mathematics">
+      <h1 class="text-red text-4xl font-display mt-24 mb-12 opacity-30 hover:opacity-100">Mathematics</h1>
+    </a>
+    <h1 class="text-green text-4xl font-display mt-24 mb-12">Software</h1>
+    <a href="data-science">
+    <h1 class="text-blue text-4xl font-display mt-24 mb-12 opacity-30 hover:opacity-100">Data Science</h1>
+    </a>
+  </div>
+  <p class="mb-3 indent-4">
+    I am a software engineer.
+  </p>
+  <Footer />
 </DefaultLayout>
