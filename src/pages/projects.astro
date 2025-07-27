@@ -1,0 +1,134 @@
+---
+import DefaultLayout from "@layouts/DefaultLayout.astro"
+import Footer from "@components/Footer.astro"
+---
+
+<DefaultLayout title="Eduardo Torres Dávila: Projects">
+  <div class="mt-24 mb-12">
+    <div class="flex items-center justify-between">
+      <h1 class="text-green text-4xl font-display">Projects</h1>
+      <div class="gap-6 flex">
+        <a href="/">
+          <i class="fa-solid fa-house hover:opacity-70"></i>
+        </a>
+        <a href="mathematics">
+          <i class="fa-solid fa-plus hover:text-red"></i>
+        </a>
+        <a href="software">
+          <i class="fa-solid fa-code hover:text-green"></i>
+        </a>
+        <a href="data-science">
+          <i class="fa-solid fa-database hover:text-blue"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="mb-12">
+    <div class="flex gap-3 text-2xl">
+      <a href="https://tranquil-starship-92a3ed.netlify.app/">
+        <h1 class="underline decoration-2 font-display text-green">
+          The Papers Game
+        </h1>
+      </a>
+      <a href="https://github.com/etdavila10/papers-game" class="hover:text-green">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <h2 class="text-lg">
+      co-developed with Aaron Li
+    </h2>
+    <blockquote class="text-base pl-4 mt-4 border-s-4 border-green h-fit">
+      <p>
+        A simple online game to find the more novel arXiv article. This website
+        was created using the React library for the user interface, and
+        the Python FastApi framework for handling arXiv articles.
+      </p>
+    </blockquote>
+  </div>
+  <div class="mb-12">
+    <div class="flex gap-3 text-2xl">
+      <a href="https://etdavila10.github.io/weyldiagrams">
+        <h1 class="underline decoration-2 font-display text-green">
+          Weyl Diagrams
+        </h1>
+      </a>
+      <a href="https://github.com/etdavila10/weyldiagrams" class="hover:text-green">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <blockquote class="text-base pl-4 mt-4 border-s-4 border-green h-fit">
+      <p>
+        A D3.js-driven web application that generates Weyl alternation diagrams
+        for rank 2 Lie Algebras, supporting the research presented in
+        <a class="underline decoration-2 text-green"
+          href="https://msp.org/involve/2024/17-2/p01.xhtml"> this paper<!--
+        --></a>.
+      </p>
+    </blockquote>
+  </div>
+  <div class="mb-12">
+    <div class="flex gap-3 text-2xl">
+      <h1 class="font-display text-green">
+        Lattice Plot
+      </h1>
+      <a href="https://github.com/etdavila10/lattice_plot" class="hover:text-green">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <h2 class="text-lg">
+      co-developed with Pamela E. Harris, Juan Ramirez, and Fabrice O. Ulysse
+    </h2>
+    <blockquote class="text-base pl-4 mt-4 border-s-4 border-green h-fit">
+      <p>
+        The same project as Weyl Diagrams above as a cli tool created with the
+        Python Matplotlib library.
+      </p>
+    </blockquote>
+  </div>
+  <div class="mb-12">
+    <div class="flex gap-3 text-2xl">
+      <a href="https://etdavila10.github.io/MatrixManipulator">
+        <h1 class="underline decoration-2 font-display text-green">
+          Matrix Manipulator
+        </h1>
+      </a>
+      <a href="https://github.com/etdavila10/MatrixManipulator" class="hover:text-green">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <h2 class="text-lg">
+      co-developed with Tara Gomes and Christopher O'Neill
+    </h2>
+    <blockquote class="text-base pl-4 mt-4 border-s-4 border-green h-fit">
+      <p>
+        A JavaScript web application that performs various operations on the
+        matrices composing a free resolution. This application supported the
+        research leading to the results presented in
+        <a class="underline decoration-2 text-green" href="https://arxiv.org/abs/2405.01700">
+          this paper<!--
+        --></a>.
+      </p>
+    </blockquote>
+  </div>
+  <div class="mb-12">
+    <div class="flex gap-3 text-2xl">
+      <h1 class="font-display text-green">
+        Kunzpolyhedron
+      </h1>
+      <a href="https://github.com/coneill-math/kunzpolyhedron" class="hover:text-green">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <h2 class="text-lg">
+      co-developed with Cole Brower, Tara Gomes, Christopher O'Neill, and Christopher Preuss
+    </h2>
+    <blockquote class="text-base pl-4 mt-4 border-s-4 border-green h-fit">
+      <p>
+        This script provides functions for working with Kunz posets, which
+        index faces of the Kunz polyhedron, in the computer algebra system
+        Sage.
+      </p>
+    </blockquote>
+  </div>
+  <Footer />
+</DefaultLayout>
