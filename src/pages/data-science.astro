@@ -4,9 +4,9 @@ import Footer from "@components/Footer.astro"
 ---
 
 <DefaultLayout title="Eduardo Torres Dávila: Data Science">
-  <div class="mt-24 mb-12">
+  <div class="mt-24 mb-12 m-6 sm:mx-12 lg:mx-0">
     <div class="flex items-center justify-between">
-      <h1 class="text-blue text-4xl font-display">Data Science</h1>
+      <h1 class="text-blue text-3xl sm:text-4xl font-display">Data Science</h1>
       <div class="gap-6 flex">
         <a href="/">
           <i class="fa-solid fa-house hover:opacity-70"></i>
@@ -23,8 +23,35 @@ import Footer from "@components/Footer.astro"
       </div>
     </div>
   </div>
-  <p class="mb-3 indent-4">
-    I am a data scientist.
+  <p class="mb-3 indent-4 mx-6 sm:mx-12 lg:mx-0">
+    A recent journey for me has been into the field of data science. As someone
+    who enjoys both mathematical rigor and software engineering challenges, I'm
+    drawn to the way data science provides a middle ground between the two. It
+    allows me to leverage my years of advanced mathematical training while
+    solving real-world problems through software. Python is my language of
+    choice, with a focus on libraries such as <a class="text-blue underline
+      decoration-2" href="https://pandas.pydata.org/">Pandas</a>, <a
+      class="text-blue underline decoration-2"
+      href="https://scikit-learn.org/stable/">scikit-learn</a>, <a
+      class="text-blue underline decoration-2"
+      href="https://numpy.org/">NumPy</a>, and <a class="text-blue underline
+      decoration-2" href="https://matplotlib.org/">Matplotlib</a>.
   </p>
+  <p class="mb-12 indent-4 mx-6 sm:mx-12 lg:mx-0">
+    In the summer of 2025, I participated in the <a class="text-blue underline
+      decoration-2" href="https://cse.umn.edu/ima/math-industry-boot-camp">IMA
+      Math-to-Industry Boot Camp</a>. During the first three weeks I took short
+    courses in statistical modeling, machine learning, and optimization. The
+    last three weeks were devoted to company sponsored projects where I worked
+    with four teammates on a U.S. Bank project that modeled mortgage-backed
+    security price curves. We used linear regression and machine learning on
+    large financial datasets to build parsimonious models that improved pricing
+    predictions.
+  </p>
+  <!-- <p class="mb-12 indent-4"> -->
+  <!--   Below you will find my most recent project. You can find a full -->
+  <!--   list of projects -->
+  <!--   <a class="underline decoration-2 text-green" href="projects">here</a>. -->
+  <!-- </p> -->
   <Footer />
 </DefaultLayout>
